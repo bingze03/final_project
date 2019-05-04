@@ -1,0 +1,21 @@
+* {
+    font-family: '微軟正黑體';
+}
+
+.top {
+    text-align: center;
+}
+
+.food {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li {
+    list-style-type: none;
+    text-align: center;
+}
+
+.pic {
+    text-align: center;
+}
