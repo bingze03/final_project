@@ -11,10 +11,10 @@
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="random_selector/style.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
+    <link rel='stylesheet' href='canvas/style.css'>
   </head>
   <body>
 
@@ -29,14 +29,14 @@
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Random Selector</a>
+            <li class="nav-item">
+              <a class="nav-link" href="random_selector.html">Random Selector</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="club_course.html">Club Course</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="canvas.html">Canvas RPG</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Canvas RPG</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="mind_quiz.html">Mind Quiz</a>
@@ -56,36 +56,8 @@
       </nav>
     </header>
 
-    <main role="main">
-        <div class='top'>
-            <h1 class='dinner'>?</h1>
-            <input class='btn' type='button' value='今天晚上吃什麼?'>
-            <br/><br/>
-            <select class='option'>
-                <option value=''>不限</option>
-                <option value='rice'>飯類</option>
-                <option value='noodles'>麵類</option>
-            </select>
-        </div>
-        <br/><br/>
-        <div class='food'>
-            <fieldset>
-                <legend>飯類</legend>
-                <li class='food rice'>滷肉飯</li>
-                <li class='food rice'>燒臘飯</li>
-                <li class='food rice'>義式燉飯</li>
-            </fieldset>
-            <fieldset>
-                <legend>麵類</legend>
-                <li class='food noodles'>拉麵</li>
-                <li class='food noodles'>餛飩麵</li>
-                <li class='food noodles'>牛肉麵</li>
-            </fieldset>
-        </div>
-        <br/>
-        <div class='pic'>
-            <img src="">
-        </div>
+    <main role='main'>
+        <canvas id='myCanvas' width='940' height='495'></canvas>
     </main>
 
     <!-- Bootstrap core JavaScript
@@ -97,6 +69,6 @@
     <script src="dist/js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <script src="assets/js/vendor/holder.min.js"></script>
-    <script src="random_selector/main.js"></script>
+    <script src='canvas/main.js'></script>
   </body>
 </html>

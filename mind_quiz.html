@@ -11,10 +11,10 @@
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="random_selector/style.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
+    <link href="mind_quiz/style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -29,8 +29,8 @@
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Random Selector</a>
+            <li class="nav-item">
+              <a class="nav-link" href="random_selector.html">Random Selector</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="club_course.html">Club Course</a>
@@ -38,8 +38,8 @@
             <li class="nav-item">
               <a class="nav-link" href="canvas.html">Canvas RPG</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="mind_quiz.html">Mind Quiz</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Mind Quiz</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="YTplayer.html">YouTube Player</a>
@@ -57,34 +57,16 @@
     </header>
 
     <main role="main">
-        <div class='top'>
-            <h1 class='dinner'>?</h1>
-            <input class='btn' type='button' value='今天晚上吃什麼?'>
-            <br/><br/>
-            <select class='option'>
-                <option value=''>不限</option>
-                <option value='rice'>飯類</option>
-                <option value='noodles'>麵類</option>
-            </select>
+        <div class='title'>
+            <h1>2018，你的愛情是什麼滋味?</h1>
         </div>
-        <br/><br/>
-        <div class='food'>
-            <fieldset>
-                <legend>飯類</legend>
-                <li class='food rice'>滷肉飯</li>
-                <li class='food rice'>燒臘飯</li>
-                <li class='food rice'>義式燉飯</li>
-            </fieldset>
-            <fieldset>
-                <legend>麵類</legend>
-                <li class='food noodles'>拉麵</li>
-                <li class='food noodles'>餛飩麵</li>
-                <li class='food noodles'>牛肉麵</li>
-            </fieldset>
+        <div class='question'>
+            <h3></h3>
         </div>
-        <br/>
-        <div class='pic'>
-            <img src="">
+        <div class='options'>
+            <div class='option option1'><span></span></div>
+            <div class='option option2'><span></span></div>
+            <div class='option option3'><span></span></div>
         </div>
     </main>
 
@@ -95,8 +77,9 @@
     <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="assets/js/vendor/popper.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
+    <script src="mind_quiz/love-taste-quiz/data.js"></script>
+    <script src="mind_quiz/main.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <script src="assets/js/vendor/holder.min.js"></script>
-    <script src="random_selector/main.js"></script>
   </body>
 </html>
