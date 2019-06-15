@@ -1,26 +1,24 @@
-const render=(date,topic)=>{
+const render=(topic)=>{
     $('#courseTable').html('');
-    $('#courseTable').append('<tr><th>場次</th><th>時間</th><th>主題</th></tr>');
-    for(var i=0; i<topic.length; ++i){
-        var currentDate=new Date(date.valueOf()+7*i*86400000);
+    $('#courseTable').append('<tr><th>順序</th><th>電影名稱</th><th>上映日期(美國)</th></tr>');
+    topic.forEach((d,i)=>{
         $('#courseTable').append(
             '<tr>'+
                 '<td>'+(i+1)+'</td>'+
-                '<td>'+(currentDate.getMonth()+1)+'/'+currentDate.getDate()+'</td>'+
-                '<td>'+topic[i]+'</td>'+
+                '<td>'+d+'</td>'+
+                '<td>'+release_date[i]+'</td>'+
             '</tr>'
         );
-        
-    }
+    });
 
     $('td').each(function(){
-        if($(this).text()=='不上課' || $(this).text()=='連假' || $(this).text()=='校慶停課')
-            $(this).parent().css('color','grey');
+        if($(this).text().includes('復仇者聯盟'))
+            $(this).parent().css('color','#f96363');
     });
 }
 
 $(document).ready(()=>{
-    render(beginDay,topic);
+    render(topic);
 
     $('input.firstDate').change(function(){
         var year=parseInt(this.value.slice(0,4));

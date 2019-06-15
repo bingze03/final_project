@@ -19,3 +19,9 @@ li {
 .pic {
     text-align: center;
 }
+
+.heroes,.heroes_pics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

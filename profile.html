@@ -14,13 +14,12 @@
 
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
-    <link href="club_course/style.css" rel="stylesheet">
   </head>
   <body>
 
     <header>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">Carousel</a>
+        <a class="navbar-brand" href="#">The Avengers</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -32,8 +31,8 @@
             <li class="nav-item">
               <a class="nav-link" href="random_selector.html">Random Selector</a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Club Course</a>
+            <li class="nav-item">
+              <a class="nav-link" href="movies.html">Movies</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="canvas.html">Canvas RPG</a>
@@ -44,8 +43,8 @@
             <li class="nav-item">
               <a class="nav-link" href="YTplayer.html">YouTube Player</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Profile</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">About me</a>
             </li>
           </ul>
           <form class="form-inline mt-2 mt-md-0">
@@ -56,16 +55,14 @@
       </nav>
     </header>
 
-    <main role="main">
-      <h1>社團課程時間表</h1>
-        <table id='courseTable'></table>
-        <br/>
-        <div class='footer'>
-            <div class='left'>
-                第一天日期: <input class='firstDate' type='date'/>
-            </div>
-            <div class='right'>
-                新增事件: <input class='newEvent' type='text'/> <button class='submit'>+</button>
+    <main role="main" style='display: flex;justify-content: center;'>
+        <div class='card'style='width: 25%'>
+            <img class='card-img-top' src='unknown.png' width=300 height=300>
+            <div class='card-body'>
+                <h5 class='card-title'>Ben Yu</h5>
+                <p class='card-text'>Come from: Keelung</p>
+                <p class='card-text'>Study at: Yuan Ze University</p>
+                <p class='card-text'>Major in: Computer Science and Engineering</p>
             </div>
         </div>
     </main>
@@ -77,8 +74,6 @@
     <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="assets/js/vendor/popper.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
-    <script src="club_course/topic.js"></script>
-    <script src="club_course/main.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <script src="assets/js/vendor/holder.min.js"></script>
   </body>
