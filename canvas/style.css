@@ -6,9 +6,15 @@ body {
     text-align: center;
 }
 
-canvas {
-    border: 2px solid black;
-    background-image: url(titan.png);
+#start-btn {
+    z-index: 1000;
+    position: absolute;
+    left: 48%;
+    top: 48%;
+}
+
+progress::-webkit-progress-value {
+    transition: width 3s ease;
 }
 
 #talkBox {
@@ -16,4 +22,33 @@ canvas {
     color: brown;
     font-size: 26px;
     font-weight: bold;
+}
+
+#myCanvas {
+    border: 2px solid black;
+    background-image: url(titan.png);
+    padding: 20px;
+    font-size: 25px;
+    text-align: center;
+    transition: all 0.2s;
+    margin: 0 auto;
+    width: 940px;
+    height: 495px;
+}
+
+#effect {
+    position: absolute;
+    text-align: center;
+    pointer-events: none;
+}
+  
+#effect canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: transform 1.5s ease-out, opacity 1.5s ease-out;
+}
+  
+#effect.border canvas {
+    box-shadow: 0 0 0 1px red;
 }
