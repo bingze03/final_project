@@ -166,15 +166,16 @@ $(document).ready(function(){
     explosion=new Image();
     explosion.src='canvas/explosion.png';
 
+    //after last image done loading
+    explosion.onload=()=>{
+        ctx.drawImage(iron_man,0,0,501,386,20,225,324,250);
+        ctx.drawImage(thanos,0,0,212,288,738,230,182,250);
+        ctx.drawImage(iron_man_pulse,0,0,325,79,310,245,230,40);
+        ctx.drawImage(thanos_pulse,0,0,451,74,530,245,230,40);
+        ctx.drawImage(explosion,0,0,79,73,500,225,79,73);
+    }
+
     $('#start-btn').click(()=>{
-		//after last image done loading
-		explosion.onload=()=>{
-			ctx.drawImage(iron_man,0,0,501,386,20,225,324,250);
-			ctx.drawImage(thanos,0,0,212,288,738,230,182,250);
-			ctx.drawImage(iron_man_pulse,0,0,325,79,310,245,230,40);
-			ctx.drawImage(thanos_pulse,0,0,451,74,530,245,230,40);
-			ctx.drawImage(explosion,0,0,79,73,500,225,79,73);
-		}
         instruction_generator();
         setInterval(()=>{
             if(pulse_length1!=0 && pulse_length2!=0){
